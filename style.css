@@ -1,0 +1,163 @@
+/* UNIVERSAL SELECTOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENT SELECTOR */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    background: linear-gradient(to right, #FFD200, #0A3D91); /* yellow to blue */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* H1 SELECTOR */
+h1, .desc {
+    text-align: center;
+    color: #FFD200; /* Wolverine yellow */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #FFEB99; /* lighter yellow */
+}
+
+.desc {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0A3D91; /* Wolverine blue */
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0A3D91;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #FFD200; /* yellow table bg */
+    color: #000000;       /* black text */
+    box-shadow: 0 0px 8px #0A3D91; /* blue shadow */
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #0A3D91; /* blue header */
+    color: #FFD200;      /* yellow text */
+}
+
+tr:nth-child(even) {
+    background-color: #FFEB99; /* light yellow for striping */
+}
+
+#registration-form {
+    background: #ffffff;
+    padding: 24px;
+    border: 2px solid #0A3D91;
+    border-radius: 10px;
+    box-shadow: 0 0px 8px #FFD200;
+    color: #000000;
+}
+
+#registration-form h2 {
+    text-align: center;
+    color: #0A3D91;
+    margin-bottom: 12px;
+}
+
+#registration-form {
+    display: block;
+    margin-bottom: 14px;
+}
+
+#registration-form label, p {
+    font-weight: bold;
+    color: #000000;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 4px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px
+}
+
+input[required] {
+    border-left: 4px solid #D32F2F; /* red accent */
+}
+
+/* PSEUDO CLASSES */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #0A3D91;
+    box-shadow: 0 0 5px #FFD200;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 14px;
+    background: #000000;
+    color: #FFD200;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: #0A3D91; /* blue */
+    color: #FFD200;      /* yellow text */
+}
+
+button[type="reset"] {
+    background: #D32F2F; /* red */
+    color: #ffffff;
+}
+
+button:hover {
+    background: #FFD200; /* yellow hover */
+    color: #000000;
+    box-shadow: 0 0 5px #0A3D91;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 3fr;
+    }
+    body{
+        background: linear-gradient(to bottom, #FFD200, #0A3D91);
+    }
+}
